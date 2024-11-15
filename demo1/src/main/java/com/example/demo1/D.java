@@ -11,9 +11,7 @@ public class D {
         this.e = e;
     }
 
-    public void doSomething() {
-        e.doSomething();
-        double pi = 3.14159;
-        System.out.println("The value of pi is: " + pi);
+    public int doSomething() {
+        return e.doSomething();
     }
 }

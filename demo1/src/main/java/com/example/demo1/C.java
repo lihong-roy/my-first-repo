@@ -11,9 +11,7 @@ public class C {
         this.d = d;
     }
 
-    public void doSomething() {
-        d.doSomething();
-        boolean truth = true;
-        System.out.println("The truth is: " + truth);
+    public int doSomething() {
+        return d.doSomething();
     }
 }

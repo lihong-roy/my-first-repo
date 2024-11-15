@@ -12,8 +12,7 @@ public class B {
     }
 
     public void doSomething() {
-        c.doSomething();
-        double pi = 3.14159;
+        int pi=c.doSomething();
         System.out.println("The value of pi is: " + pi);
     }
 }
