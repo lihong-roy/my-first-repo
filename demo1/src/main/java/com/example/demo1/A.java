@@ -9,6 +9,10 @@ public class A {
     @Autowired
     public A(B b) {
         this.b = b;
+    }
+    public void doSomething() {
         b.doSomething();
+        double pi = 3.14159;
+        System.out.println("The value of pi is: " + pi);
     }
 }

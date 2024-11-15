@@ -13,5 +13,7 @@ public class C {
 
     public void doSomething() {
         d.doSomething();
+        boolean truth = true;
+        System.out.println("The truth is: " + truth);
     }
 }
