@@ -9,6 +9,8 @@ public class A {
     @Autowired
     public A(B b) {
         this.b = b;
+        int number = 123;
+        System.out.println("The number is: " + number);
     }
 //    public void doSomething() {
 //        b.doSomething();
