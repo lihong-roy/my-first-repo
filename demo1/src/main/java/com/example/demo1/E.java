@@ -5,5 +5,7 @@ import org.springframework.stereotype.Service;
 public class E {
     public void doSomething() {
         // 实际的业务逻辑
+        int number = 123;
+        System.out.println("The number is: " + number);
     }
 }
