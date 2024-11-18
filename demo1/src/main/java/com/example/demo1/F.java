@@ -8,7 +8,12 @@ public class F {
     @Autowired
     public F(G g) {
         this.g = g;
-        int number = 123;
-        System.out.println("The number is: " + number);
+//        int number = 123;
+//        System.out.println("The number is: " + number);
+    }
+    public void doSomething() {
+        g.doSomething();
+        double pi = 3.14159;
+        System.out.println("The value of pi is: " + pi);
     }
 }
