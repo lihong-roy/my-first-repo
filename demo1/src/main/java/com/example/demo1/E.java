@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 public class E {
     public int doSomething() {
         // 实际的业务逻辑
-        int number = 125;
+        int number = 126;
         return number;
     }
 }
