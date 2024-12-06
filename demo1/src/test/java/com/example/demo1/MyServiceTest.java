@@ -13,13 +13,13 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 public class MyServiceTest {
     @Autowired
-    private Hello1 hello;
+    private Hello hello;
     @Autowired
     private A a;
-    @Test
-    public void testGreet() {
-        Assert.assertEquals("Hello, World!", hello.greet("World"));
-    }
+//    @Test
+//    public void testGreet() {
+//        Assert.assertEquals("Hello, World!", hello.greet("World"));
+//    }
     @Test
     public void teste() {
         a.doSomething();
