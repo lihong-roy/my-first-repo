@@ -14,4 +14,11 @@ public class Demo1Application {
 
 }
 
+class Hello1 {
+	//浏览器请求/hello地址，会调用hello()方法
+	public String greet(String name) {
+		return "Hello, " + name + "!";
+	}
+}
+
 
