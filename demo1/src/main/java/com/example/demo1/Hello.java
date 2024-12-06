@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class Hello {
     //浏览器请求/hello地址，会调用hello()方法
     private Hello1 hello;
+    private E e;
     @RequestMapping("/hello")
     public String greet(String name) {
         System.out.println(hello.greet("aaa"));
+        System.out.println(e.doSomething());
         return "Hello, " + name + "!";
     }
 }

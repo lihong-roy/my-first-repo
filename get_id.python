@@ -1,0 +1,15 @@
+import subprocess
+ 
+def get_commit_ids(repo_path):
+    # 使用git log命令获取commit ID
+    process = subprocess.Popen(['git', 'log', '--pretty=format:%H'], stdout=subprocess.PIPE, cwd=repo_path)
+    output, _ = process.communicate()
+    commit_ids = output.strip().split(b'\n')  # 将输出分割成一个列表
+    return [commit_id.decode('utf-8') for commit_id in commit_ids]  # 将字节串解码为字符串
+ 
+# 使用示例
+repo_path = '/path/to/your/git/repo'  # 替换为你的Git仓库路径
+commit_ids = get_commit_ids(repo_path)
+for commit_id in commit_ids:
+    print(commit_id)
+
