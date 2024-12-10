@@ -4,14 +4,14 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class D {
-    private final E e;
+    private final E e1;
 
     @Autowired
-    public D(E e) {
-        this.e = e;
+    public D(E e1) {
+        this.e1 = e1;
     }
 
     public int doSomething() {
-        return e.doSomething();
+        return e1.doSomething();
     }
 }
